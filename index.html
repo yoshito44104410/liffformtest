@@ -12,51 +12,51 @@
     <form class="w-75 mx-auto">
         <p class="mt-3">カップ本体</p>
         <div>
-            <input class="form-control w-100 mt-1" name="name" placeholder="" required>
+            <input class="form-control w-100 mt-1" name="cup" placeholder="" required>
         </div>
         <p class="mt-3">ドーム蓋</p>
         <div>
-            <input class="form-control w-100 mt-1" name="udetate" required>
+            <input class="form-control w-100 mt-1" name="dorm" required>
         </div>
         <p class="mt-3">ピック</p>
         <div>
-            <input class="form-control w-100 mt-1" name="fukkin" required>
+            <input class="form-control w-100 mt-1" name="piccu" required>
         </div>
         <p class="mt-3">タイ（緑）</p>
         <div>
-            <input class="form-control w-100 mt-1" name="haikin" required>
+            <input class="form-control w-100 mt-1" name="tai" required>
         </div>
         <p class="mt-3">T字ホルダー</p>
         <div>
-            <input class="form-control w-100 mt-1" name="sukuwat" required>
+            <input class="form-control w-100 mt-1" name="tji" required>
         </div>
     　　 <p class="mt-3">ハンドルバック</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="handoru" required>
     　　</div>
     　　<p class="mt-3">OPP</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="opp" required>
     　　</div>
     　　<p class="mt-3">保冷ピン</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="horeipinn" required>
     　　</div>
     　　<p class="mt-3">チラシ両面</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="tirashi" required>
     　　</div>
     　　<p class="mt-3">切り方チラシ</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="kirikata" required>
     　　</div>
     　　<p class="mt-3">保冷剤</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="horeizai" required>
     　　</div>
     　　<p class="mt-3">担当者名</p>
     　　　<div>
-        <input class="form-control w-100 mt-1" name="haikin" required>
+        <input class="form-control w-100 mt-1" name="tantousya" required>
     　　</div>
 
 
@@ -107,12 +107,20 @@
 
         $(function () {
             $('form').submit(function () {
-                const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                const cup    = $('input[name="cup"]').val();
+                const dorm = $('input[name="dorm"]').val();
+                const piccu  = $('input[name="piccu"]').val();
+                const tai  = $('input[name="tai"]').val();
+                const tji = $('input[name="tji"]').val();
+                const handoru    = $('input[name="handoru"]').val();
+                const opp    = $('input[name="opp"]').val();
+                const horeipinn   = $('input[name="horeipinn"]').val();
+                const tirashi    = $('input[name="tirashi"]').val();
+                const kirikata    = $('input[name="kirikata"]').val();
+                const horeizai    = $('input[name="horeizai"]').val();
+                const tantousya    = $('input[name="tantousya"]').val();
+                
+                const msg = `${cup}\n${dorm}\n${piccu}\n${tai}\n${tji}\n${handoru}\n${opp}\n${horeipinn}\n${tirashi}\n${kirikata}\n${horeizai}\n${tantousya}`;
                 sendText(msg);
                 return false;
             });
