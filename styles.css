@@ -1,0 +1,20 @@
+/* styles.css */
+
+/* ページ全体に背景画像を設定 */
+body {
+    background-image: url('haikei.jpg'); /* 画像のファイル名とパスを設定 */
+    background-size: cover; /* 画像をコンテナに合わせて表示 */
+    background-repeat: no-repeat; /* 背景画像を繰り返し表示しない */
+    background-attachment: fixed; /* スクロールしても背景画像が固定 */
+}
+
+/* その他のスタイルやコンテンツに関するCSSを追加 */
+/* 例: 解答欄の背景色を灰色に設定する */
+input.form-control {
+    background-color: rgb(219, 184, 184);
+    border: 3px solid gray;
+}
+
+
+
+
