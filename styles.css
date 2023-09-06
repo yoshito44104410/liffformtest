@@ -7,6 +7,12 @@ body {
     background-repeat: no-repeat; /* 背景画像を繰り返し表示しない */
     background-attachment: fixed; /* スクロールしても背景画像が固定 */
 }
+@media (max-width: 767px) {
+    body {
+        background-size: contain; /* 背景画像をコンテナに収める */
+        background-attachment: scroll; /* スクロールに従って背景画像を移動 */
+    }
+}
 
 /* その他のスタイルやコンテンツに関するCSSを追加 */
 /* 例: 解答欄の背景色を灰色に設定する */
@@ -14,7 +20,6 @@ input.form-control {
     background-color: rgb(219, 184, 184);
     border: 3px solid gray;
 }
-
 
 
 
