@@ -11,6 +11,7 @@ body {
     body {
         background-size: contain; /* 背景画像をコンテナに収める */
         background-attachment: scroll; /* スクロールに従って背景画像を移動 */
+        background-position: center center; /* 背景画像を中央に配置 */
     }
 }
 
